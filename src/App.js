@@ -1,10 +1,15 @@
 import React, {Fragment} from 'react';
-import PrimerComponente from './components/PrimerComponente'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
+  const fecha = new Date().getFullYear();
   return (
   <Fragment>
-    <PrimerComponente />
+    <Header
+    titulo = 'Tienda Virtual' />
+
+    <Footer fecha = {fecha}></Footer>
   </Fragment>
   );
 }
